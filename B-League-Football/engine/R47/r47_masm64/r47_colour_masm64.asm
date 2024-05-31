@@ -21,85 +21,98 @@
 ; different shade e.g. swap out white with Azure or WhiteSmoke, swap out black with some form of Dark Grey
 ;
 ; ***************************************************************************************************************************************************
+; 01/06/2024
+; **********
+; I have converted from '#RRGGBB' format to '0xRRGGBB' format to ensure that It works now.
+;
+; To make this file truly good, I will have to expand It, turn all definitions Into globals to be able to use In C, then create a C header that
+; Interprets these Assembly definitions. Originally the C header was simple and platform Independant but now It's a little more complex and factors
+; In Assembly language
+;
+; I theorise that this will create extremely subtle performance optimisation, If this proves to be wrong It would not negatively affect performance.
+; Regardless of whether It creates barely noticable performance Increases, decreases or no change, It will serve as a good, simple training exercise
+; for learning Assembly as I've always wanted to do.
+; ***************************************************************************************************************************************************
 
-; File Is Incomplete, I've run out of time for now and will come back later to finish of the document
+; File Is now complete but, I may add more colours In the future despite there being plenty, I also will likely turn them Into globals so I can use It In C rather than writing It twice.
 .data
 
 ; R47 GUI special colours
 ; In the "special" colours section I have listed colours that stood out to me In particular, whether It's for looking modern, attention grabbing or generally aesthetically pleasing
-LIME equ #00FF00
-GHOSTWHITE equ #F8F8FF
+LIME equ 0x00FF00
+GHOSTWHITE equ 0xF8F8FF
 ; Had to Include cyan as homage to Terry A. Davis. Rest In peace, your contributions to software engineering created despite your significant personal/mental struggles will forever be an Inspiration.
-CYAN equ #00FFFF
-ALICEBLUE equ #F0F8FF
-LIGHTCYAN equ #E0FFFF
-LAVENDER equ #E6E6FA
-GAINSBORO equ #DCDCDC
-LIGHTGREY equ #D3D3D3
-SILVER equ #C0C0C0
-GREY equ #A9A9A9
-DARKLIGHTGREY equ #4D4D4D
-DARKMIDGREY equ #3B3A3A
-DARKGREY equ #212121
-RAKIGREY equ #474747
-BLUEVIOLET equ #8A2BE2
-DARKVIOLET equ #9400D3
-CRIMSON equ #DC143C
-GOLDENROD equ #DAA520
-DARKGOLDENROD equ #B8860B
-DARKORANGE equ #FF8C00
+CYAN equ 0x00FFFF
+ALICEBLUE equ 0xF0F8FF
+LIGHTCYAN equ 0xE0FFFF
+LAVENDER equ 0xE6E6FA
+GAINSBORO equ 0xDCDCDC
+LIGHTGREY equ 0xD3D3D3
+SILVER equ 0xC0C0C0
+GREY equ 0xA9A9A9
+DARKLIGHTGREY equ 0x4D4D4D
+DARKMIDGREY equ 0x3B3A3A
+DARKGREY equ 0x212121
+RAKIGREY equ 0x474747
+BLUEVIOLET equ 0x8A2BE2
+DARKVIOLET equ 0x9400D3
+CRIMSON equ 0xDC143C
+GOLDENROD equ 0xDAA520
+DARKGOLDENROD equ 0xB8860B
+DARKORANGE equ 0xFF8C00
 
 ; Basic colours
-WHITE equ #FFFFFF
-SNOW equ #FFFAFA
-LINEN equ #FAF0E6
-ANTIQUEWHITE equ #FAEBD7
-NAVAJOWHITE equ #FFDEAD
-CADETBLUE equ #5F9EA0
-STEELBLUE equ #4682B4
-CORNFLOWERBLUE equ #6495ED
-DEEPSKYBLUE equ #00BFFF
-DARKTURQUOISE equ #00CED1
-ROYALEBLUE equ #4169E1
-MEDIUMBLUE equ #0000CD
-BLUE equ #0000FF
-DARKBLUE equ #00008B
-NAVY equ #000080
-MIDNIGHTBLUE equ #191970
-PURPLE equ #800080
-DARKMAGENTA equ #8B008B
-DARKORCHID equ #9932CC
-INDIGO equ #4B0082
-MAGENTA equ #FF00FF
-ORCHID equ #DA70D6
-MEDIUMORCHID equ #BA55D3
-VIOLET equ #EE82EE
-LIGHTSALMON equ #FFA07A
-LIGHTCORAL equ #F08080
-LIGHTRED equ #FF4040
-RED equ #FF0000
-DARKRED equ #8B0000
-MAROON equ #800000
-ORANGE equ #FFA500
-ORANGERED equ #FF4500
-BURLYWOOD equ #DEB887
-ROSYBROWN equ #BC8F8F
-TOMATO equ #FF6347
-INDIANRED equ #CD5C5C
-FIREBRICK equ #B22222
-BROWN equ #A52A2A
-SIEANNA equ #A0522D
-OLIVE equ #808000
-GOLD equ #FFD700
-YELLOW equ #FFFF00
-YELLOWGREEN equ #9ACD32
-GREENYELLOW equ #ADEE2E
-GREEN equ #328032
-SEAGREEN equ #3CB371
-SPRINGGREEN equ #00FF7F
-DARKSEAGREEN equ #8FBC8F
-DIMGREY equ #696969
-BLACK equ #000000
+WHITE equ 0xFFFFFF
+SNOW equ 0xFFFAFA
+LINEN equ 0xFAF0E6
+ANTIQUEWHITE equ 0xFAEBD7
+NAVAJOWHITE equ 0xFFDEAD
+CADETBLUE equ 0x5F9EA0
+STEELBLUE equ 0x4682B4
+CORNFLOWERBLUE equ 0x6495ED
+DEEPSKYBLUE equ 0x00BFFF
+DARKTURQUOISE equ 0x00CED1
+ROYALEBLUE equ 0x4169E1
+MEDIUMBLUE equ 0x0000CD
+BLUE equ 0x0000FF
+DARKBLUE equ 0x00008B
+NAVY equ 0x000080
+MIDNIGHTBLUE equ 0x191970
+PURPLE equ 0x800080
+DARKMAGENTA equ 0x8B008B
+DARKORCHID equ 0x9932CC
+INDIGO equ 0x4B0082
+MAGENTA equ 0xFF00FF
+ORCHID equ 0xDA70D6
+MEDIUMORCHID equ 0xBA55D3
+VIOLET equ 0xEE82EE
+LIGHTSALMON equ 0xFFA07A
+LIGHTCORAL equ 0xF08080
+LIGHTRED equ 0xFF4040
+RED equ 0xFF0000
+DARKRED equ 0x8B0000
+MAROON equ 0x800000
+ORANGE equ 0xFFA500
+ORANGERED equ 0xFF4500
+BURLYWOOD equ 0xDEB887
+ROSYBROWN equ 0xBC8F8F
+TOMATO equ 0xFF6347
+INDIANRED equ 0xCD5C5C
+FIREBRICK equ 0xB22222
+BROWN equ 0xA52A2A
+SIEANNA equ 0xA0522D
+OLIVE equ 0x808000
+GOLD equ 0xFFD700
+YELLOW equ 0xFFFF00
+YELLOWGREEN equ 0x9ACD32
+GREENYELLOW equ 0xADEE2E
+GREEN equ 0x328032
+SEAGREEN equ 0x3CB371
+SPRINGGREEN equ 0x00FF7F
+DARKSEAGREEN equ 0x8FBC8F
+DIMGREY equ 0x696969
+BLACK equ 0x000000
+
 
 ; Here I am creating an empty function because x64 MASM refuses to compile without It unlike MASM32
 .code
