@@ -28,8 +28,8 @@
 ; R47 GUI special colours
 ; In the "special" colours section I have listed colours that stood out to me In particular, whether It's for looking modern, attention grabbing or generally aesthetically pleasing
 LIME equ #00FF00
-; Had to Include cyan as homage to Terry A. Davis. Rest In peace, your contributions to software engineering created despite your significant personal/mental struggles will forever be an Inspiration.
 GHOSTWHITE equ #F8F8FF
+; Had to Include cyan as homage to Terry A. Davis. Rest In peace, your contributions to software engineering created despite your significant personal/mental struggles will forever be an Inspiration.
 CYAN equ #00FFFF
 ALICEBLUE equ #F0F8FF
 LIGHTCYAN equ #E0FFFF
@@ -41,6 +41,7 @@ GREY equ #A9A9A9
 DARKLIGHTGREY equ #4D4D4D
 DARKMIDGREY equ #3B3A3A
 DARKGREY equ #212121
+RAKIGREY equ #474747
 BLUEVIOLET equ #8A2BE2
 DARKVIOLET equ #9400D3
 CRIMSON equ #DC143C
@@ -50,30 +51,55 @@ DARKORANGE equ #FF8C00
 
 ; Basic colours
 WHITE equ #FFFFFF
+SNOW equ #FFFAFA
+LINEN equ #FAF0E6
+ANTIQUEWHITE equ #FAEBD7
+NAVAJOWHITE equ #FFDEAD
+CADETBLUE equ #5F9EA0
+STEELBLUE equ #4682B4
+CORNFLOWERBLUE equ #6495ED
+DEEPSKYBLUE equ #00BFFF
+DARKTURQUOISE equ #00CED1
+ROYALEBLUE equ #4169E1
+MEDIUMBLUE equ #0000CD
+BLUE equ #0000FF
+DARKBLUE equ #00008B
+NAVY equ #000080
+MIDNIGHTBLUE equ #191970
+PURPLE equ #800080
+DARKMAGENTA equ #8B008B
+DARKORCHID equ #9932CC
+INDIGO equ #4B0082
+MAGENTA equ #FF00FF
+ORCHID equ #DA70D6
+MEDIUMORCHID equ #BA55D3
+VIOLET equ #EE82EE
+LIGHTSALMON equ #FFA07A
+LIGHTCORAL equ #F08080
+LIGHTRED equ #FF4040
+RED equ #FF0000
+DARKRED equ #8B0000
+MAROON equ #800000
+ORANGE equ #FFA500
+ORANGERED equ #FF4500
+BURLYWOOD equ #DEB887
+ROSYBROWN equ #BC8F8F
+TOMATO equ #FF6347
+INDIANRED equ #CD5C5C
+FIREBRICK equ #B22222
+BROWN equ #A52A2A
+SIEANNA equ #A0522D
+OLIVE equ #808000
+GOLD equ #FFD700
+YELLOW equ #FFFF00
+YELLOWGREEN equ #9ACD32
+GREENYELLOW equ #ADEE2E
+GREEN equ #328032
+SEAGREEN equ #3CB371
+SPRINGGREEN equ #00FF7F
+DARKSEAGREEN equ #8FBC8F
+DIMGREY equ #696969
 BLACK equ #000000
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
- equ 
 
 ; Here I am creating an empty function because x64 MASM refuses to compile without It unlike MASM32
 .code
