@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\B-League-Football\engine\R47\glad_\glad.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glad_\khrplatform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\getopt.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\glad\gl.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\glad\gles2.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\glad\vulkan.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\linmath.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\mingw\dinput.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\mingw\xinput.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\mingw\_mingw_dxhelper.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\nuklear.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\nuklear_glfw_gl2.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\stb_image_write.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\deps\tinycthread.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\cocoa_joystick.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\cocoa_platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\cocoa_time.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\internal.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\linux_joystick.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\mappings.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\null_joystick.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\null_platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\posix_poll.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\posix_thread.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\posix_time.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\win32_joystick.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\win32_platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\win32_thread.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\win32_time.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\wl_platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\x11_platform.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\glfw\src\xkb_unicode.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\input.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\m_colour.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47.hpp" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64\image_win64.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64\linear_algebra_win64.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64\matrices_win64.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64\splash.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_masm64\trigonometry_win64.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_unix.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_unix\matrices_mac.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\r47_window_manager.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\stb_image.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\stb_tilemap_editor.h" />
+    <ClInclude Include="..\B-League-Football\engine\R47\stb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\B-League-Football\engine\R47\glad_\glad.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\deps\getopt.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\deps\tinycthread.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\cocoa_time.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\context.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\egl_context.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\glx_context.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\init.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\input.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\linux_joystick.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\monitor.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\null_init.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\null_joystick.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\null_monitor.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\null_window.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\osmesa_context.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\posix_module.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\posix_poll.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\posix_thread.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\posix_time.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\vulkan.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\wgl_context.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_init.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_joystick.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_module.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_monitor.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_thread.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_time.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\win32_window.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\window.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\wl_init.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\wl_monitor.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\wl_window.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\x11_init.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\x11_monitor.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\x11_window.c" />
+    <ClCompile Include="..\B-League-Football\engine\R47\glfw\src\xkb_unicode.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\B-League-Football\engine\R47\glfw\src\cocoa_init.m" />
+    <None Include="..\B-League-Football\engine\R47\glfw\src\cocoa_joystick.m" />
+    <None Include="..\B-League-Football\engine\R47\glfw\src\cocoa_monitor.m" />
+    <None Include="..\B-League-Football\engine\R47\glfw\src\cocoa_window.m" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9ff650bc-ba4f-4ecc-8af5-b901ac13b05f}</ProjectGuid>
+    <RootNamespace>R47</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>C:\Users\Filip\Desktop\B-League Football</OutDir>
+    <IntDir>C:\Users\Filip\Desktop\B-League Football</IntDir>
+    <IncludePath>E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glad_;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\include\GLFW;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps\glad;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps\mingw;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\src;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\r47_masm64;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\r47_unix;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Filip\Desktop\B-League Football;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>C:\Users\Filip\Desktop\B-League Football\debug version</OutDir>
+    <IntDir>C:\Users\Filip\Desktop\B-League Football\debug version</IntDir>
+    <IncludePath>E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glad_;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps\glad;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\deps\mingw;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\include\GLFW;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\glfw\src;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\r47_masm64;E:\Raki47-Post-Rest\_new engine\Magna Engine\B-League-Football\engine\R47\r47_unix;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Filip\Desktop\B-League Football\debug version;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <WarningVersion>
+      </WarningVersion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
