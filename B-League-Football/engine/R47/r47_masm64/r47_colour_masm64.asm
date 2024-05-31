@@ -22,13 +22,15 @@
 ;
 ; ***************************************************************************************************************************************************
 
-.data ; File Is Incomplete, I've run out of time for now and will come back later to finish of the document
+; File Is Incomplete, I've run out of time for now and will come back later to finish of the document
+.data
 
 ; R47 GUI special colours
 ; In the "special" colours section I have listed colours that stood out to me In particular, whether It's for looking modern, attention grabbing or generally aesthetically pleasing
 LIME equ #00FF00
-CYAN equ #00FFFF ; Had to Include cyan as homage to Terry A. Davis. Rest In peace, your contributions to software engineering created despite your significant personal/mental struggles will forever be an Inspiration.
+; Had to Include cyan as homage to Terry A. Davis. Rest In peace, your contributions to software engineering created despite your significant personal/mental struggles will forever be an Inspiration.
 GHOSTWHITE equ #F8F8FF
+CYAN equ #00FFFF
 ALICEBLUE equ #F0F8FF
 LIGHTCYAN equ #E0FFFF
 LAVENDER equ #E6E6FA
